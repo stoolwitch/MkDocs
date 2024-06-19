@@ -22,6 +22,19 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          CONFIG_FILE: Documentation/mkdocs.yml
+          EXTRA_PACKAGES: build-base
   # Single deploy job since we're just deploying
   deploy:
     environment:
