@@ -1,0 +1,6 @@
+site_name: Project Rebirth
+nav:
+  - Home: index.md
+  - 'Lore':
+    - 'World': 'world.md'
+    - 'Characters': 'characters.md'
