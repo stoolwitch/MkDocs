@@ -3,4 +3,7 @@ nav:
   - Home: index.md
   - 'Lore':
     - 'World': 'world.md'
-    - 'Characters': 'characters.md'
+    - 'Characters':
+      - 'Main Character': 'pchar.md'
+      - 'The Handler': 'handler.md'
+      - 'Other Employees': 'colleagues.md'
